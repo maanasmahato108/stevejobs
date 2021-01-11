@@ -1,0 +1,64 @@
+body{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    color: #333;
+}
+
+#stevejobsimage img{
+    border: 10px solid #333;
+    height: 15%;
+    width: 15%;
+    animation-name: steveimganimation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes steveimganimation{
+    15%{width: 15%; height: 15%; border-radius: 0%;}
+    100%{width: 50%; height: 50%; border-radius: 50%;}
+}
+
+
+/*about stevejobs*/
+
+.aboutsteve{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    margin: 1%;
+    color: black;
+}
+.aboutsection{
+    
+    border: 2px solid #333;
+    justify-content: none;
+    align-items: none;
+    text-align: none;
+    margin: 1%;
+}
+
+.aboutsection ul{
+    margin-right: 10%;
+}
+
+.nutshellabout ul li{
+    margin-right: 3%;
+    padding: 1%;
+}
+
+#nutshellsection img{
+    height: 70%;
+    width: 70%;
+    border: 2px solid black;
+    margin: 15%;
+}
+
+/*media*/
+
+@media (min-width: 0px) and (max-width: 500px){
+    .aboutsteve{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
